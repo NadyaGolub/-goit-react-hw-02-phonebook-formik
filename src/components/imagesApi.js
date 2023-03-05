@@ -7,7 +7,7 @@ export async function imagesApi({ search, page }) {
   try {
     const response = await axios.get('', {
       params: {
-        key: '29743747-4d974b8d370b5a5c48adadad9',
+        key: '32971749-6f722df3241990952229e902a',
         q: search,
         image_type: 'photo',
         orientation: 'horizontal',

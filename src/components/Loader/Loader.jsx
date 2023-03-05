@@ -10,7 +10,7 @@ export function Loader() {
             ariaLabel="grid-loading"
             radius="12.5"
             wrapperStyle={{}}
-            wrapperClass={css.loader}
+            
         />
     );
 }

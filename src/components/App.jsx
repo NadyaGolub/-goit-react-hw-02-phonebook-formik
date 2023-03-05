@@ -4,10 +4,10 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { Button } from './Button/Button';
-import { ImageGallery } from './imageGallery/ImageGallery';
-import { ImageGalleryItem } from './imageGalleryItem/ImageGalleryItem';
+import { ImageGallery } from './ImageGallery/ImageGallery';
+import { ImageGalleryItem } from './ImageGalleryItem/ImageGalleryItem';
 import { Modal } from './Modal/Modal';
-import { Searchbar } from './searchbar/Searchbar';
+import { Searchbar } from './Searchbar/Searchbar';
 import * as message from './notification';
 import { imagesApi } from './imagesApi';
 import { Loader } from './Loader/Loader';
@@ -43,7 +43,7 @@ export function App() {
         setImages(prevState => [...prevState, ...images]);
         setTotalImages(totalImages);
       } catch (error) {
-        // console.log('error in newSearchRequestServer');
+       
         message.notificationServerError();
       } finally {
         setLoading(false);
@@ -54,7 +54,7 @@ export function App() {
     newSearchRequestServer();
 
     return () => {
-      // ^abortController?
+     
     };
   }, [search, page]);
 
